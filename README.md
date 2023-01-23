@@ -1,1 +1,1 @@
-# prince_of_persia
+# prince-of-persia
