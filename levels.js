@@ -1,64 +1,91 @@
 //Go up and down the stairs
-
 function getStairsMovementDirection(stairNumber, isClimbingStairs) {
-  if(stairNumber && isClimbingStairs % 2 === 0) {
-    return "left"
-  } else if(stairNumber && isClimbingStairs % 2 !== 0) {
-    return "right"
-  } else {
-    if(stairNumber && isClimbingStairs % 2 === 0) {
-      return "up"
-    } else if(stairNumber && isClimbingStairs % 2 !== 0) {
-      return "down"
-    }
+  if (stairNumber % 2 === 0 && !isClimbingStairs) {
+    return 'down';
+  } else if (stairNumber % 2 !== 0 && !isClimbingStairs) {
+    return 'right';
+  } else if (stairNumber % 2 === 0 && isClimbingStairs) {
+    return 'up';
+  } else if (stairNumber % 2 !== 0 && isClimbingStairs) {
+    return 'right';
   }
-};
-
+}
 //Zig-zag movement
+function getZigZagMovementDirection() {
 
-function getZigZagMovementDirection ()
+}
 
 //Move the prince using the keyboard
-function manuallyControl ()
+function manuallyControl() {
+
+}
 
 //Drink potion 2
-function givePotion2Answer ()
+function givePotion2Answer() {
+
+}
 
 //Drink potion 3
-function givePotion3Answer ()
+function givePotion3Answer() {
+
+}
 
 //Drink potion 4
-function givePotion4Answer ()
+function givePotion4Answer() {
+
+}
 
 //Drink potion 5
-function givePotion5Answer ()
+function givePotion5Answer() {
+
+}
 
 //Drink potion 6
-function givePotion6Answer ()
+function givePotion6Answer() {
+
+}
 
 //Drink potion 7
-function givePotion7Answer ()
+function givePotion7Answer() {
+
+}
 
 //Drink potion 8
-function givePotion8Answer ()
+function givePotion8Answer() {
+
+}
 
 //Drink potion 9
-function givePotion9Answer ()
+function givePotion9Answer() {
+
+}
 
 //Drink potion 10
-function givePotion10Answer ()
+function givePotion10Answer() {
+
+}
 
 //Drink potion 11
-function givePotion11Answer ()
+function givePotion11Answer() {
+
+}
 
 //Drink potion 12
-function givePotion12Answer ()
+function givePotion12Answer() {
+
+}
 
 //Solve Level 7 Dungeon
-function level7Move ()
+function level7Move() {
+
+}
 
 //Solve Level 8 Dungeon
-function level8Move ()
+function level8Move() {
+
+}
+
+
 // DON'T MODIFY THE CODE BELOW THIS LINE
 
 let toExport;
