@@ -1,18 +1,19 @@
 //Go up and down the stairs
 function getStairsMovementDirection(stairNumber, isClimbingStairs) {
-  if (stairNumber % 2 === 0 && !isClimbingStairs) {
-    return 'down';
-  } else if (stairNumber % 2 !== 0 && !isClimbingStairs) {
-    return 'right';
-  } else if (stairNumber % 2 === 0 && isClimbingStairs) {
-    return 'up';
-  } else if (stairNumber % 2 !== 0 && isClimbingStairs) {
-    return 'right';
+  if(stairNumber % 2 === 0 && isClimbingStairs === false) {
+    return "down"
+  } else if(stairNumber % 2 !== 0 && isClimbingStairs === false) {
+      return "right"
+  } else if (stairNumber % 2 === 0 && isClimbingStairs === true) {
+    return "up"
+  } else {
+    return "right"
   }
 }
+  
 //Zig-zag movement
 function getZigZagMovementDirection() {
-
+  
 }
 
 //Move the prince using the keyboard
