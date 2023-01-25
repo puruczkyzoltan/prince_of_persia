@@ -26,6 +26,10 @@ function getZigZagMovementDirection(step) {
 let isQPressed = true;
 function manuallyControl(key) {
   //WASD
+   if(key === "KeyQ") {
+    isQPressed = !isQPressed;
+   }
+   if(isQPressed === true) {
     if (key === "KeyW") {
       moveDirection("up");
     };
@@ -37,7 +41,8 @@ function manuallyControl(key) {
     };
     if(key === "KeyD") {
       moveDirection("right")
-    } else {
+    }
+   } else {  
     //Arrows
     if(key === "ArrowUp") {
       moveDirection("up")
@@ -51,7 +56,7 @@ function manuallyControl(key) {
     if(key === "ArrowRight") {
       moveDirection("right")
     }
-  }
+   }  
 }
 
 //Drink potion 2
