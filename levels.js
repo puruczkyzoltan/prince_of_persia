@@ -23,20 +23,37 @@ function getZigZagMovementDirection(step) {
 }
 
 //Move the prince using the keyboard
+let isQPressed = true;
 function manuallyControl(key) {
-  if (key === "KeyW") {
-    moveDirection("up");
-  }
-  if (key === "KeyA") {
-    moveDirection("left")
-  }
-  if(key === "KeyS") {
-    moveDirection("down")
-  }
-  if(key === "KeyD") {
-    moveDirection("right")
+  //WASD
+    if (key === "KeyW") {
+      moveDirection("up");
+    };
+    if (key === "KeyA" && "KeyLeft") {
+      moveDirection("left")
+    };
+    if(key === "KeyS") {
+      moveDirection("down")
+    };
+    if(key === "KeyD") {
+      moveDirection("right")
+    } else {
+    //Arrows
+    if(key === "ArrowUp") {
+      moveDirection("up")
+    };
+    if(key === "ArrowLeft") {
+      moveDirection("left")
+    };
+    if(key === "ArrowDown") {
+      moveDirection("down")
+    };
+    if(key === "ArrowRight") {
+      moveDirection("right")
+    }
   }
 }
+
 //Drink potion 2
 function givePotion2Answer() {
 
