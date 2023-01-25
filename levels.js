@@ -23,10 +23,20 @@ function getZigZagMovementDirection(step) {
 }
 
 //Move the prince using the keyboard
-function manuallyControl() {
-
+function manuallyControl(key) {
+  if (key === "KeyW") {
+    moveDirection("up");
+  }
+  if (key === "KeyA") {
+    moveDirection("left")
+  }
+  if(key === "KeyS") {
+    moveDirection("down")
+  }
+  if(key === "KeyD") {
+    moveDirection("right")
+  }
 }
-
 //Drink potion 2
 function givePotion2Answer() {
 
