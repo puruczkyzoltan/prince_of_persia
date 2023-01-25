@@ -12,8 +12,14 @@ function getStairsMovementDirection(stairNumber, isClimbingStairs) {
 }
   
 //Zig-zag movement
-function getZigZagMovementDirection() {
-  
+function getZigZagMovementDirection(step) {
+  if(step % 6 === 0) {
+    return "up"
+  } else if(step % 3 === 0) {
+    return "down" 
+  } else {
+    return "right"
+  }
 }
 
 //Move the prince using the keyboard
